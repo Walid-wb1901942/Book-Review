@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/organizer.css" />
+  <link rel="stylesheet" href="css/createSchedule.css">
+  <title>Create Schedule</title>
+</head>
+
+<body onload="initial2()">
+  <main>
+    <div class="nav_container">
+        <nav class="nav">
+            <img
+                src="images/logo1.png"
+                alt="ConfPlus logo"
+                class="nav__logo"
+                id="logo"
+            />
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--3">Services</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  
+  <form id="scheduleForm">
+    <fieldset>
+      <legend>Session Selector</legend>
+      <br>
+      <div class="SelectandLabel">
+      <label for="sessionsAll">Session:</label>
+      <select id="sessionsAll" required name="session"></select><br><br>
+      </div>
+      <!-- <button id="addSessionBtn" onclick="addSessionHandler()">Add Session</button> -->
+      <!-- <button id="deleteSessionBtn" onclick="deleteSessionHandler()">Delete Session</button> -->
+      <div class="links">
+      <a href="#" class="sessionLinks" id="addSessionBtn">Add Session </a>
+      <a href="#" class="sessionLinks" onclick="deleteSessionHandler()">Delete Session</a>
+      <a href="#" class="sessionLinks" id="updateBtn">Update Session</a>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Paper Selector</legend>
+      <br>
+      <div class="SelectandLabel">
+      <label for="papersAll">Papers:</label>
+      <select id="papersAll" required name="paper"></select><br><br>
+    </div>
+    </fieldset>
+    <div class="links" >
+    <input type="submit" class="sessionLinks" value="Add Schedule Entry" id="submit-btn">
+    <!-- <button id="done-btn" onclick="goBack()">Done</button> -->
+    <a href="organizer.html" class="sessionLinks" id="done-btn" >Done</a>
+  </div>
+  </form>
+  <div id="formInject">
+    <!-- Inject Form Here -->
+
+  </div>
+  <div id="Schedule_Container1">
+
+  </div>
+  <script src="js/createSchedule.js"></script>
+</main>
+
+</body>
+
+</html>

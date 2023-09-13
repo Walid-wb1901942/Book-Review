@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/organizer.css" />
+    <link rel="stylesheet" href="css/createSchedule.css">
+    <link rel="stylesheet" href="css/updateSchedule.css">
+
+    <title>Schedule Update Form</title>
+</head>
+<body onload="loadUpdateForm()">
+    <div class="nav_container">
+        <nav class="nav">
+            <img
+                src="images/logo1.png"
+                alt="ConfPlus logo"
+                class="nav__logo"
+                id="logo"
+            />
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--3">Services</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  
+<form action="" id="updateForm">
+    <div  id="sessionSelector">
+    <select id="sessionSelect" onchange="loadForm()">
+        <option value="" selected disabled>Please select a session to update</option>   
+        <!-- inject options here -->
+    </select>
+</div>
+    <div id="fieldset">
+    <div>
+        <label for="sessionTitle"> Session Title : </label>
+        <input type="text" id="sessionTitle" class="text_fields" name="sessionTitle" disabled placeholder="">
+    </div><br>
+    <div>
+        <label for="paperTitle"> Paper Title : </label>
+        <input type="text" id="paperTitle" name="paperTitle"  class="text_fields" disabled placeholder="">
+    </div>
+    <div>
+        <label for="location"> Meeting Location : </label>
+        <select id="location" name="location" >
+            <!-- inject locations here -->
+        </select>
+    </div>
+    <div>
+        <label for="date">Session Date : </label>
+        <select name="date" id="date">
+            <!-- inject dates here -->
+        </select>
+    </div>
+    <div>
+        <label for="from_time">From Time : </label>
+        <input type="time" id="from_time"  class="text_fields" name="from_time">
+    </div>
+    <div>
+        <label for="to_time">To Time : </label>
+        <input type="time" id="to_time" name="to_time"  class="text_fields">
+    </div>
+    <div>
+        <label for="presenter"> Presenter's Name : </label>
+        <select name="presenter" id="presenter">
+            <!-- inject dates here -->
+        </select>
+    </div>
+    <div>
+        <label for="author">Authors' Name/s : </label>
+        <input type="text" id="author" disabled placeholder=""  class="text_fields">
+    </div>
+</div>
+<div  id="sessionSelector">
+    <input type="submit" id="submitBtn" value="Submit">
+</div>
+</form>
+<script src="js/organizer.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+    {
+        "title": "The Shawshank Redemption",
+        "abstract": "this is an abstract",
+        "overallEvaluation": 0,
+        "paperPath": "path/to/paper"
+    },
+    {
+        "title": "The Great Gatsby",
+        "abstract": "this is an abstract",
+        "overallEvaluation": 0,
+        "paperPath": "path/to/paper"
+    },
+    {
+        "title": "The Godfather",
+        "abstract": "this is an abstract",
+        "overallEvaluation": 0,
+        "paperPath": "path/to/paper"
+    },
+    {
+        "title": "The Dark Knight",
+        "abstract": "this is an abstract",
+        "overallEvaluation": 0,
+        "paperPath": "path/to/paper"
+    }
+]

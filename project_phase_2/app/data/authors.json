@@ -1,0 +1,44 @@
+[
+    {
+        "authorId": 14,
+        "presenter": true,
+        "affiliation": "Qatar University",
+        "role": "author"
+    },
+    {
+        "authorId": 15,
+        "presenter": false,
+        "affiliation": "Qatar University",
+        "role": "author"
+    },
+    {
+        "authorId": 16,
+        "presenter": true,
+        "affiliation": "Qatar University",
+        "role": "author"
+    },
+    {
+        "authorId": 17,
+        "presenter": false,
+        "affiliation": "Qatar University",
+        "role": "author"
+    },
+    {
+        "authorId": 18,
+        "presenter": true,
+        "affiliation": "Qatar University",
+        "role": "author"
+    },
+    {
+        "authorId": 19,
+        "presenter": false,
+        "affiliation": "Qatar University",
+        "role": "author"
+    },
+    {
+        "authorId": 20,
+        "presenter": true,
+        "affiliation": "Qatar University",
+        "role": "author"
+    }
+]

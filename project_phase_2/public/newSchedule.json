@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "sessionTitle": "Group Session",
+        "location": "CSE Meeting Room BCR-E104",
+        "date": "2023-05-01",
+        "from_time": "11:00",
+        "to_time": "15:00",
+        "paperTitle": "The Great Gatsby",
+        "abstract": "asd",
+        "authors": [
+          {
+            "firstName": "Khalid",
+            "lastName": "Abdullah",
+            "fullName" : "Khalid Abdullah",
+            "email": "k@gmail.com",
+            "affliation": "Qatar University",
+            "presenter": true,
+            "id": "svyfpd0z3oclgcrut80"
+          },
+          {
+            "firstName": "Abdullah",
+            "lastName": "Abdullah",
+            "fullName" : "Abdullah Abdullah",
+            "email": "aa@gmail.com",
+            "affliation": "Qatar University",
+            "presenter": false,
+            "id": "svyfpd0z3oclgcrut89"
+          }
+    
+        ],
+        "reviewers": [
+            {
+                "id": 9,
+                "first_name": "Luke",
+                "last_name": "Harris",
+                "fullName":"Luke Harris",
+                "email": "lukeharris@reviewer.com",
+                "password": "password123",
+                "role": "reviewer"
+            },
+            {
+                "id": 5,
+                "first_name": "David",
+                "last_name": "Brown",
+                "fullName":"David Brown",
+                "email": "davidbrown@reviewer.com",
+                "password": "password123",
+                "role": "reviewer"
+            }
+        ],
+        "paper": {
+            "filename": "paper.pdf",
+            "path": "data\\uploads\\paper.pdf"
+        }
+    },{
+        "id": 2,
+        "sessionTitle": "Group Session 2",
+        "location": "QU Library B13-201",
+        "date": "2023-03-01",
+        "from_time": "11:00",
+        "to_time": "13:00",
+        "paperTitle": "The Great Gatsby 2",
+        "abstract": "asd",
+        "authors": [
+          {
+            "firstName": "Waleed",
+            "lastName": "Ali",
+            "fullName" : "Waleed Ali",
+            "email": "w@gmail.com",
+            "affliation": "Qatar University",
+            "presenter": true,
+            "id": "svyfpd0z3oclgcrut10"
+          },
+          {
+            "firstName": "Ali",
+            "lastName": "Bob",
+            "fullName" : "Ali Bob",
+            "email": "ab@gmail.com",
+            "affliation": "Qatar University",
+            "presenter": false,
+            "id": "svyfpd0z3oclgcrut99"
+          }
+        ],
+        "reviewers": [
+            {
+                "id": 9,
+                "first_name": "Luke",
+                "last_name": "Harris",
+                "fullName":"Luke Harris",
+                "email": "lukeharris@reviewer.com",
+                "password": "password123",
+                "role": "reviewer"
+            },
+            {
+                "id": 5,
+                "first_name": "David",
+                "last_name": "Brown",
+                "fullName":"David Brown",
+                "email": "davidbrown@reviewer.com",
+                "password": "password123",
+                "role": "reviewer"
+            }
+        ],
+        "paper": {
+            "filename": "paper.pdf",
+            "path": "data\\uploads\\paper.pdf"
+        }
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "title":"Group Session 1",
+        "location":"CSE Meeting Room BCR-E104",
+        "confDate":"2019-01-01",
+        "scheduleId":1
+    },
+    {
+        "title":"Group Session 2",
+        "location":"CSE Meeting Room BCR-E104",
+        "confDate":"2019-01-02",
+        "scheduleId":1
+    },
+    {
+        "title":"Group Session 3",
+        "location":"CSE Meeting Room BCR-E104",
+        "confDate":"2019-01-03",
+        "scheduleId":1
+    }
+]

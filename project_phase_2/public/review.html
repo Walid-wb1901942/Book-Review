@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/review.css" />
+</head>
+<body onload="loadFormPage()">
+<!-- onload="loadFormPage()" -->
+    <!-- onload="loadPaperTitles()" -->
+    <header>
+        <nav class="nav">
+            <img
+              src="images/logo1.png"
+              alt="ConfPlus logo"
+              class="nav__logo"
+              id="logo"
+            />
+            <ul class="nav__links">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">Home</a>
+              </li>
+              <!-- <li class="nav__item">
+                <a class="nav__link" href="#section--2">About</a>
+              </li> -->
+              <li class="nav__item">
+                <a class="nav__link" href="#section--3">Services</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contact-us.html">Contact</a>
+              </li>
+            </ul>
+        </nav>
+        <h1>Reviewing a paper</h1>
+    </header>
+    <main>
+        <h2 id="reviewHdr">Please fill out the form to review a paper</h2><br>
+        <form action="#" id="reviewForm">
+            <!-- <div class="form-group">
+                <label for="college">College:</label>
+
+                <select name="college" id="college" required>
+                    <option disabled selected value="">Select your college</option>
+                    <option value="Engineering">Engineering</option>
+                    <osption value="Medicine">Medicine</option>
+                    <option value="Business">Business</option>
+                </select><br><br>
+            </div> -->
+            <div class="selection">
+                <!-- <label for="paper">Select a paper to review : </label>
+                <select name="paper" id="paper" required> -->
+                    <!-- <option value="test 1">Test 1</option>
+                    <option value="test 2">Test 2</option>
+                    <option value="test 3">Test 3</option> -->
+                    <div id="paper-titles">
+
+                    </div>
+                </select>
+            </div><br>
+            <fieldset class="evaluation">
+                <legend>Overall Evaluation</legend>
+                <div class="form-group">
+                    <label for="evaluation">Rate Overall Evaluation : </label><br>
+                    <div class="radio-group">
+                        <input type="radio" id="strong_a" name="evaluation" value="2" required>
+                        <label for="strong_a"> 2 (Strong Accept)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="accept" name="evaluation" value="1" required>
+                        <label for="accept"> 1 (Accept)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="borderline" name="evaluation" value="0" required>
+                        <label for="borderline"> 0 (Borderline)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="reject" name="evaluation" value="-1" required>
+                        <label for="reject"> -1 (Reject)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="strong_r" name="evaluation" value="-2" required>
+                        <label for="strong_r"> -2 (Strong Reject)</label>
+                    </div>
+                </div><br>
+            </fieldset><br>
+            <fieldset class="contribution">
+                <legend>Paper Contribution</legend>
+                <div class="form-group">
+                    <label for="contribution">Rate Paper Contribution : </label><br>
+                    <div class="radio-group">
+                        <input type="radio" id="major" name="contribution" value="5" required>
+                        <label for="major"> 5 (Major Contribution)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="clear" name="contribution" value="4" required>
+                        <label for="clear"> 4 (Clear Contribution)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="minor" name="contribution" value="3" required>
+                        <label for="minor"> 3 (Minor Contribution)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="v_minor" name="contribution" value="2" required>
+                        <label for="v_minor"> 2 (Very minor Contribution)</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" id="no_clr" name="contribution" value="1" required>
+                        <label for="no_clr"> 1 (No clear Contribution)</label>
+                    </div>
+                </div><br>
+            </fieldset><br>
+            <fieldset class="strengths">
+                <legend>Paper Strengths</legend>
+                <div class="form-group">
+                    <label for="strengths">Comment on the paper's strengths: </label><br>
+                    <textarea name="strengths" id="strengths" class="textarea" cols="60" rows="7" required></textarea><br><br>
+                </div>
+            </fieldset><br>
+            <fieldset class="weaknesses">
+                <legend>Paper Weaknesses</legend>
+                <div class="form-group">
+                    <label for="weaknesses">Comment on the paper's weaknesses: </label><br>
+                    <textarea name="weaknesses" id="weaknesses" class="textarea" cols="60" rows="7" required></textarea><br><br>
+                </div>
+            </fieldset>
+            <input type="submit" class="btn sbt">
+
+
+        </form>
+    </main>
+    <script src="js/review.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table User {
+  id Int [pk, increment]
+  firstName String [not null]
+  lastName String [not null]
+  email String [not null]
+  password String [not null]
+  role String [not null]
+  reviewer Reviewer
+  author Author
+  organizer Organizer
+}
+
+Table Author {
+  id Int [pk, increment]
+  institution Institution [not null]
+  affiliation String [not null]
+  presenter Boolean [not null]
+  papers Paper [not null]
+  role String [not null]
+  user User [not null]
+  authorId Int [unique, not null]
+}
+
+Table Paper {
+  id Int [pk, increment]
+  title String [not null]
+  abstract String [not null]
+  overallEvaluation Int [not null]
+  paperPath String [not null]
+  reviewers Reviewer [not null]
+  reviews Review [not null]
+  authors Author [not null]
+  presentation Presentation
+}
+
+Table Reviewer {
+  id Int [pk, increment]
+  user User [not null]
+  reviewerId Int [unique, not null]
+  papers Paper [not null]
+  reviews Review [not null]
+  role String [not null]
+}
+
+Table Review {
+  id Int [pk, increment]
+  evaluation Int [not null]
+  contribution Int [not null]
+  strengths String [not null]
+  weaknesses String [not null]
+  paper Paper [not null]
+  reviewer Reviewer [not null]
+  reviewerId Int [not null]
+  paperId Int [not null]
+}
+
+Table Institution {
+  id Int [pk, increment]
+  title String [unique, not null]
+  authors Author [not null]
+}
+
+Table Organizer {
+  id Int [pk, increment]
+  user User [not null]
+  organizerId Int [unique, not null]
+  role String [not null]
+}
+
+Table Schedule {
+  id Int [pk, increment]
+  sessions Session [not null]
+}
+
+Table Session {
+  id Int [pk, increment]
+  title String [not null]
+  locationObj Location [not null]
+  location String [not null]
+  confDateObj Conference [not null]
+  confDate String [not null]
+  presentations Presentation [not null]
+  schedule Schedule [not null]
+  scheduleId Int [not null]
+}
+
+Table Conference {
+  date String [unique, not null]
+  sessions Session [not null]
+}
+
+Table Presentation {
+  id Int [pk, increment]
+  title String [not null]
+  fromTime String [not null]
+  toTime String [not null]
+  session Session [not null]
+  sessionId Int [unique, not null]
+  paper Paper [not null]
+  paperId Int [unique, not null]
+}
+
+Table Location {
+  id Int [pk, increment]
+  title String [unique, not null]
+  sessions Session [not null]
+}
+
+Ref: Author.affiliation > Institution.title
+
+Ref: Author.authorId - User.id [delete: Cascade]
+
+Ref: Reviewer.reviewerId - User.id [delete: Cascade]
+
+Ref: Review.paperId > Paper.id [delete: Cascade]
+
+Ref: Review.reviewerId > Reviewer.reviewerId [delete: Cascade]
+
+Ref: Organizer.organizerId - User.id [delete: Cascade]
+
+Ref: Session.location > Location.title
+
+Ref: Session.confDate > Conference.date
+
+Ref: Session.scheduleId > Schedule.id [delete: Cascade]
+
+Ref: Presentation.sessionId > Session.id [delete: Cascade]
+
+Ref: Presentation.paperId - Paper.id [delete: Cascade]

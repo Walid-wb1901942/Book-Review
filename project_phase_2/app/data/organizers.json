@@ -1,0 +1,10 @@
+[
+    {
+        "organizerId": 1,
+        "role": "organizer"
+    },
+    {
+        "organizerId": 2,
+        "role": "organizer"
+    }
+]

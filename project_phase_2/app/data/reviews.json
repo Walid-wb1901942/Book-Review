@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "evaluation": 0,
+        "contribution": 0,
+        "strengths": "my strengths 1",
+        "weaknesses": "my weaknesses 1",
+        "reviewerId": 3,
+        "paperId": 1
+    },
+    {
+        "id": 2,
+        "evaluation": 1,
+        "contribution": 1,
+        "strengths": "my strengths 2",
+        "weaknesses": "my weaknesses 2",
+        "reviewerId": 3,
+        "paperId": 2
+    },
+    {
+        "id": 3,
+        "evaluation": 1,
+        "contribution": 1,
+        "strengths": "my strengths 3",
+        "weaknesses": "my weaknesses 3",
+        "reviewerId": 4,
+        "paperId": 3
+    }
+]

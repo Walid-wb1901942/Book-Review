@@ -1,0 +1,56 @@
+#updateForm{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fieldset{
+    border: solid 1px;
+    border-color: var(--color-primary-darker);
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1cm;
+}
+#sessionSelector{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#sessionSelect{
+    font-size: large;
+}
+#location,#date{
+    font-size: 20px;
+    width:fit-content;
+}
+fieldset{
+    display: block;
+}
+.text_fields{
+    font-size:20px ;
+    width: max-content;
+}
+#submitBtn{
+    text-align: center;
+    border: 2px solid #6ee289;
+    width: max-content;
+    font-size: 1.7rem;
+    padding: 1rem;
+    border-radius: 30px;
+    font-family: "Poppins", sans-serif;
+    color: #626262;
+    background-color: #f3f3f3;
+    transition: 0.3s;
+    margin: 20px;
+    
+}
+#submitBtn:hover{
+    background-color: #6add85;
+    color: white;
+    transition: 0.3s;
+}

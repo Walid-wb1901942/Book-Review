@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Presentation 1",
+        "fromTime": "11:00",
+        "toTime": "12:00",
+        "sessionId": 1,
+        "paperId": 1
+    },
+    {
+        "title": "Presentation 2",
+        "fromTime": "11:00",
+        "toTime": "12:00",
+        "sessionId": 2,
+        "paperId": 2
+    }
+]

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/authorStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/author.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="nav_container">
+      <nav class="nav">
+          <img
+              src="images/logo1.png"
+              alt="ConfPlus logo"
+              class="nav__logo"
+              id="logo"
+          />
+          <ul class="nav__links">
+              <li class="nav__item">
+                  <a class="nav__link" href="index.html">Home</a>
+              </li>
+              <li class="nav__item">
+                  <a class="nav__link" href="#section--3">Services</a>
+              </li>
+              <li class="nav__item">
+                  <a class="nav__link" href="contact-us.html">Contact</a>
+              </li>
+          </ul>
+      </nav>
+    </div>
+
+    <div>
+
+    <section class="author-section container">
+      <div class="author-content">
+        <h1 class="author-section-title">Author</h1>
+        <!-- <h1>Welcome you are an author</h1> -->
+
+        <form class="form" enctype="multipart/form-data">
+          <div class="form-container">
+            <div>
+              <label for="title">Paper Title:</label>
+              <input type="text" id="title" name="title" required /><br />
+
+              <label for="abstract">Abstract:</label>
+              <textarea id="abstract" name="abstract" required></textarea><br />
+
+              <label for="presenter">Presenter</label>
+              <div id="presenter"></div>
+
+              <label for="presenter-firstName"> First Name:</label>
+              <input
+                id="presenter-firstName"
+                name="presenter-firstName"
+                required
+              />
+
+              <label for="presenter-lastName"> Last Name:</label>
+              <input
+                id="presenter-lastName"
+                name="presenter-lastName"
+                required
+              />
+
+              <label for="presenter-email"> Email:</label>
+              <input id="presenter-email" name="presenter-email" required />
+
+              <label for="presenter-affiliation">Affiliation:</label>
+              <select
+                id="presenter-affiliation"
+                name="presenter-affiliation"
+                required
+              ></select>
+              <br />
+            </div>
+            <div class="authors">
+              <label for="author-form">Author</label>
+              <div id="author-form">
+                <label for="author-firstName"> First Name:</label>
+                <input id="author-firstName" name="author-firstName" />
+                <label for="author-lastName"> Last Name:</label>
+                <input id="author-lastName" name="author-lastName" />
+                <label for="author-email"> Email:</label>
+                <input id="author-email" name="author-email" />
+                <label for="author-affiliation">Affiliation:</label>
+                <select
+                  id="author-affiliation"
+                  name="author-affiliation"
+                ></select>
+                <br />
+              </div>
+
+              <button type="button" class="add-author author-btn">
+                Add Author
+              </button>
+              <br />
+            </div>
+            <div>
+              <h1 class="author-section-title author-section-title-2">
+                Authors
+              </h1>
+
+              <div class="author-list"></div>
+            </div>
+          </div>
+          <div class="paper-pdf">
+            <label for="pdf">Paper PDF:</label>
+            <input
+              type="file"
+              id="pdf"
+              name="pdf"
+              accept="application/pdf"
+              required
+            /><br />
+          </div>
+          <div>
+            <input class="author-btn" type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+      <!-- <div class="img-container">
+        <img class="conf-img" src="images/cof3.jpg" alt="" />
+      </div> -->
+    </section>
+    <script src="js/author.js"></script>
+  </body>
+</html>

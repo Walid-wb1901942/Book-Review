@@ -1,0 +1,148 @@
+:root {
+    --color-primary: #5ec576;
+    --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+    --color-primary-darker: #4bbb7d;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  .text{
+    text-align: center;
+    color: #8c8a8a;
+  }
+  #Schedule_Container{
+    margin-top: 1cm;
+  }
+
+#Schedules{
+    padding: 1rem;
+    font-size: 0.5cm;
+    table-layout: fixed;
+    
+}
+table{
+    font-size: larger;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+    border: solid 1px var(--color-primary);
+    
+}
+td{
+    border: solid 1px var(--color-primary);
+    width: 50%;
+    padding: 10px;
+}
+.titles{
+    font-weight: bold;
+}
+
+.nav_container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nav__links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .nav__item {
+    margin-left: 4rem;
+  }
+  
+  .nav__link {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+  }
+  .nav__link:hover {
+    color: var(--color-primary);
+  }
+  
+  .nav__link--btn {
+    padding: 0.8rem 4.5rem;
+    border-radius: 3rem;
+    background-color: var(--color-primary);
+    color: #222;
+  }
+  
+  .nav__link--btn:hover {
+    color: inherit;
+    background-color: var(--color-primary-darker);
+    color: #333;
+  }
+  .btn_div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1cm;
+
+  }
+   button{
+    border: none;
+    border: 2px solid #6ee289;
+    font-size: 1.7rem;
+    padding: 1rem;
+    border-radius: 30px;
+    width:30%;
+    font-family: "Poppins", sans-serif;
+    color: #626262;
+    background-color: #f3f3f3;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #6add85;
+    color: white;
+    transition: 0.3s;
+}
+@media screen and (max-width:480px) {
+    #Schedule_Container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #Schedules{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #logo{
+        margin-bottom: -1cm;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .nav__links{
+        display: flex;
+        flex-direction: column;
+        padding-right: 4rem;
+    }
+    h1{
+        font-size: 1cm;
+    }
+    .btn_div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        width: 30%;
+        margin: 0.3cm;
+    }
+
+}

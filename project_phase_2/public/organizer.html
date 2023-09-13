@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/organizer.css" />
+    <title>Organizer Page</title>
+</head>
+<body onload="loadSchedule2()">
+    <div id="main-content">
+        
+        <div class="nav_container">
+        <nav class="nav">
+            <img
+                src="images/logo1.png"
+                alt="ConfPlus logo"
+                class="nav__logo"
+                id="logo"
+            />
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--3">Services</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="text">
+        <h1>Schedules Editor</h1>
+    </div>
+
+        <!-- <button onclick="loadAdd()">Add session</button> -->
+        <div class="btn_div">
+            <button onclick="loadScheduleEditor()">Add Entry</button>
+            <button onclick="updateSchedule()">Update Schedule</button>
+        </div>
+      
+       <div id="Schedule_Container">
+        <!-- We will Inject code here -->
+        
+        </div> 
+    </div>
+    <!-- <script src="js/createSession.js"></script>
+    <script src="js/createSchedule.js"></script> -->
+    <script src="js/organizer.js"></script>
+
+</body>
+</html>

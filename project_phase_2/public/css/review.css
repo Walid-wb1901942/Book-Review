@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    color: grey;
+}
+legend{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+form{
+    font-size: 1.4rem;
+    margin: 2rem;
+    display: grid;
+    grid-template-areas: "selection  selection"
+                        "evaluation contribution"
+                        "strengths strengths"
+                        "weaknesses weaknesses"
+                        "sbt sbt";
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+.form-group > label{
+    width: 90%;
+    text-align: left;
+
+}
+.radio-group{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 20.5rem;
+    column-gap: 2rem;
+}
+.btn{
+    border: none;
+    border: 2px solid #6ee289;
+    font-size: 1.7rem;
+    padding: 1rem;
+    border-radius: 30px;
+    width:30%;
+    font-family: "Poppins", sans-serif;
+    color: #626262;
+    background-color: #f3f3f3;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: #6add85;
+    color: white;
+    transition: 0.3s;
+}
+.sbt{
+    grid-area: sbt;
+    margin: auto;
+    margin-top: 1rem;
+}
+h1{
+    font-size: 4.5rem;
+}
+h2{
+    font-size: large;
+}
+h1,h2{
+    text-align: center;
+}
+.selection{
+    font-size: large;
+    grid-area: selection;
+}
+fieldset{
+    border-radius: 20px; 
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    margin: 1rem;
+}
+
+.evaluation{
+    grid-area: evaluation;
+}
+.contribution{
+    grid-area: contribution;
+}
+.strengths{
+    grid-area: strengths;
+}
+.weaknesses{
+    grid-area: weaknesses;
+    margin-bottom: 2rem;
+}
+
+.textarea{
+    width: 100%;
+    border: none;
+}
+@media screen and (max-width:691px) {
+    #reviewForm{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__links{
+        flex-direction: column;
+        
+    }
+    h1{
+        margin-top: 160px;
+    }
+    img{
+        margin-top: -0.2cm;
+        margin-bottom: -1cm;
+    }
+
+}

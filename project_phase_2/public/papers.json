@@ -1,0 +1,91 @@
+[
+    {
+      "paperTitle": "The Great Gatsby",
+      "abstract": "asd",
+      "authors": [
+        {
+          "firstName": "Khalid",
+          "lastName": "Abdullah",
+          "fullName": "Khalid Abdullah",
+          "email": "k@gmail.com",
+          "affliation": "Qatar University",
+          "presenter": true,
+          "id": "svyfpd0z3oclgcrut80"
+        },
+        {
+          "firstName": "Abdullah",
+          "lastName": "Abdullah",
+          "fullName": "Abdullah Abdullah",
+          "email": "aa@gmail.com",
+          "affliation": "Qatar University",
+          "presenter": false,
+          "id": "svyfpd0z3oclgcrut89"
+        }
+      ],
+      "reviewers": [
+        {
+          "id": 9,
+          "first_name": "Luke",
+          "last_name": "Harris",
+          "email": "lukeharris@reviewer.com",
+          "password": "password123",
+          "role": "reviewer"
+        },
+        {
+          "id": 5,
+          "first_name": "David",
+          "last_name": "Brown",
+          "email": "davidbrown@reviewer.com",
+          "password": "password123",
+          "role": "reviewer"
+        }
+      ],
+      "file" : "https://www.cs.bgu.ac.il/~frankel/TechnicalReports/2016/16-02.pdf",
+      "reviews": []
+    },
+    {
+      "paperTitle": "The Great Gatsby 2",
+      "abstract": "asd",
+      "authors": [
+        {
+          "firstName": "Waleed",
+          "lastName": "Ali",
+          "fullName": "Waleed Ali",
+          "email": "w@gmail.com",
+          "affliation": "Qatar University",
+          "presenter": true,
+          "id": "svyfpd0z3oclgcrut10s"
+        },
+        {
+          "firstName": "Ali",
+          "lastName": "Bob",
+          "fullName": "Ali Bob",
+          "email": "ab@gmail.com",
+          "affliation": "Qatar University",
+          "presenter": false,
+          "id": "svyfpd0z3oclgcrut99"
+        }
+      ],
+      "reviewers": [
+        {
+          "id": 9,
+          "first_name": "Luke",
+          "last_name": "Harris",
+          "email": "lukeharris@reviewer.com",
+          "password": "password123",
+          "role": "reviewer"
+        },
+        {
+          "id": 5,
+          "first_name": "David",
+          "last_name": "Brown",
+          "email": "davidbrown@reviewer.com",
+          "password": "password123",
+          "role": "reviewer"
+        }
+      ],
+      "file" : "https://www.cs.bgu.ac.il/~frankel/TechnicalReports/2016/16-02.pdf",
+      "reviews": []
+    }
+
+]

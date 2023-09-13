@@ -1,0 +1,124 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+  // relationMode = "prisma"
+}
+
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
+// enum Role {
+//   user
+//   reviewer
+//   author
+// }
+model User{
+  id        Int      @id @default(autoincrement())
+  firstName      String
+  lastName      String
+  email         String
+  password String
+  role  String
+  reviewer Reviewer?
+  author Author?
+  organizer Organizer?
+}
+model Author{
+  id       Int      @id @default(autoincrement())
+  institution   Institution @relation(fields: [affiliation], references: [title])
+  affiliation String
+  presenter Boolean
+  papers     Paper[]
+  role String
+  user   User @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  authorId Int @unique
+}
+model Paper{
+  id        Int      @id @default(autoincrement()) 
+  title     String
+  abstract  String
+  overallEvaluation Int
+  paperPath String
+  reviewers Reviewer[] @relation("Reviewers")
+  reviews Review[]
+  authors   Author[]
+  presentation Presentation?
+}
+model Reviewer{
+  id       Int      @id @default(autoincrement())
+  user   User @relation(fields: [reviewerId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  reviewerId Int      @unique
+  papers     Paper[] @relation("Reviewers")
+  reviews Review[]
+  role String
+}
+model Review{
+  id       Int      @id @default(autoincrement())
+  evaluation Int
+  contribution Int
+  strengths String
+  weaknesses String
+  paper Paper @relation(fields: [paperId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  reviewer Reviewer @relation(fields: [reviewerId], references: [reviewerId],   onDelete: Cascade, onUpdate: Cascade)
+  reviewerId Int
+  paperId Int
+}
+model Institution{
+  id        Int      @id @default(autoincrement())
+  title     String @unique
+  authors   Author[]
+}
+model Organizer{
+  id       Int      @id @default(autoincrement())
+  user   User @relation(fields: [organizerId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  organizerId Int      @unique
+  role String
+}
+model Schedule{
+  id        Int      @id @default(autoincrement())
+  sessions Session[]
+}
+model Session{
+  id        Int      @id @default(autoincrement())
+  title     String
+  locationObj Location @relation(fields: [location], references: [title])
+  location String
+  confDateObj Conference @relation(fields: [confDate], references: [date])
+  confDate String
+  presentations Presentation[]
+  schedule Schedule @relation(fields: [scheduleId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  scheduleId Int
+}
+model Conference{
+  date String @unique
+  sessions Session[]
+}
+model Presentation{
+  id        Int      @id @default(autoincrement())
+  title     String
+  fromTime String
+  toTime String
+  session Session @relation(fields: [sessionId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  sessionId Int @unique
+  paper Paper @relation(fields: [paperId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  paperId Int @unique
+}
+model Location{
+  id        Int      @id @default(autoincrement())
+  title     String @unique
+  sessions Session[]
+}
+//id, title, location, conf_date, presentations
+          // "id": 9,
+          // "first_name": "Luke",
+          // "last_name": "Harris",
+          // "email": "lukeharris@reviewer.com",
+          // "password": "password123",
+          // "role": "reviewer"

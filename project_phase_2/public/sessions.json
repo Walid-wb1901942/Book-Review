@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "sessionTitle": "Group Session",
+        "location": "CSE Meeting Room BCR-E104",
+        "date": "2023-05-01",
+        "from_time": "11:00",
+        "to_time": "13:00"
+    },
+    {
+        "id": 2,
+        "sessionTitle": "Group Session 2",
+        "location": "QU Library B13-201",
+        "date": "2023-03-01",
+        "from_time": "11:00",
+        "to_time": "13:00"
+    }
+]
